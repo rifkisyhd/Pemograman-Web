@@ -30,6 +30,14 @@ body {
   color: white;
 }
 
+.navbar.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(99, 175, 247, 0.8);
+  transition: background-color 0.3s ease;
+}
+
 /* warna background */
 .navbar::before {
   content: "";
@@ -40,6 +48,88 @@ body {
   bottom: 0;
   background-color: rgb(99, 175, 247);
   z-index: -1;
+}
+
+/* start deksripsi game */
+.deskripsi {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.deskripsi h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.deskripsi p {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+/* end deksripsi game */
+
+/* start flowchart game */
+.flowchart {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.flowchart h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+}
+.flowchart img {
+  width: 50%;
+}
+/* end flowchart game */
+
+/* start skenario */
+.skenario {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.skenario h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+}
+.skenario p {
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+/* end skenario */
+
+.row h1 {
+  margin-bottom: 25px;
 }
 
 .row {
@@ -107,16 +197,15 @@ p {
 
 .sidebar {
   height: 100%;
-  width: 200px;
+  width: 250px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: rgb(99, 175, 247);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 100px;
-  z-index: 3;
 }
 
 .sidebar a {
@@ -155,7 +244,7 @@ p {
   border: none;
   margin-right: 100px;
   display: flex;
-  position: absolute;
+  position: fixed;
   margin-top: 25px;
   margin-left: 50px;
   z-index: 2;
