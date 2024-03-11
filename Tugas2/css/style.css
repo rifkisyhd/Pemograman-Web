@@ -33,6 +33,7 @@ body {
 .navbar.scrolled {
   position: fixed;
   top: 0;
+  left: -20px;
   width: 100%;
   background-color: rgba(99, 175, 247, 0.8);
   transition: background-color 0.3s ease;
@@ -249,7 +250,6 @@ p {
   margin-left: 50px;
   z-index: 2;
 }
-
 .openbtn:hover {
   background-color: rgb(34, 105, 172);
 }
